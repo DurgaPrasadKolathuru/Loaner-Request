@@ -21,6 +21,15 @@
         </element>
         <element attributes="edge_encryption_enabled=true" label="Overdue reminder" max_length="40" name="last_overdue_reminder" type="calendar_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Location to be used" max_length="40" name="location_to_be_use" type="string"/>
+        <element choice="3" default="blackberry" label="Mobile device preference" max_length="40" name="mobile_device_preference" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Blackberry" sequence="0" value="Blackberry"/>
+                <element inactive_on_update="false" label="Andriod" sequence="1" value="Andriod"/>
+                <element inactive_on_update="false" label="iphone" sequence="2" value="iphone"/>
+                <element inactive_on_update="false" label="Nokia" sequence="3" value="Nokia"/>
+                <element inactive_on_update="false" label="Satellite" sequence="4" value="Satellite"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="other" type="string"/>
         <element label="Overdue count" max_length="40" name="overdue_count" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="Pick up remainder" max_length="40" name="pick_up_remainder" type="calendar_date_time"/>
